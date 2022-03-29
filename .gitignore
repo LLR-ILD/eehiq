@@ -1,0 +1,4 @@
+.eggs
+.ipynb_checkpoints
+_build
+img_cache

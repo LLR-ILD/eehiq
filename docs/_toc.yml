@@ -1,0 +1,26 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: index
+parts:
+  - caption: LCIO based
+    chapters:
+    - file: lcio_based/technical_comments
+      sections:
+      - file: lcio_based/pyLCIO3_on_LLR_jupyterhub
+    - file: lcio_based/LCIO
+    - file: lcio_based/anajob
+  - caption: ROOT based
+    chapters:
+    - file: root_based/technical_comments
+      sections:
+      - file: root_based/BuildMyLCTuple
+    - file: root_based/ReconstructedParticles
+    - file: root_based/ReproduceGeneratorCuts
+    - file: root_based/MC_generator_status
+    - file: root_based/MC_generator_status_4
+    - file: root_based/MC_simulator_status
+    - file: root_based/MC_many_bhabha
+    - file: root_based/HiggsstrahlungRecoilGoodnessOfFit
+    - file: root_based/PhotonSpectrum
