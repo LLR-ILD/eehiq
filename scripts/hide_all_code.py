@@ -43,7 +43,7 @@ def resize_images(iter_notebooks):
                     break
             if not has_ipython_display:
                 continue
-            meta_ipython_display = op["data"].get("metadata", {})
+            meta_ipython_display = op.get("metadata", {})
             img_width = meta_ipython_display.get("image/png", {}).get("width", 400)
             img_width = str(min(100, int(49 * float(img_width) / 400))) + "%"
             cell_render = cell.get("metadata", {}).get("render", {})
